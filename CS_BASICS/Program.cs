@@ -15,6 +15,9 @@ namespace CsTemelleri
             string Ad2;
             Ad2 = "ismihan"; // degiskeni tanimladik fakat deger atamasini ayrica yaptik  
             #endregion
+            #region stackheap
+            //stack ve heap 
+            #endregion
 
 
         }
