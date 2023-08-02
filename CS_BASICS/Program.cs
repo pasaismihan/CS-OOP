@@ -15,10 +15,21 @@ namespace CsTemelleri
             string Ad2;
             Ad2 = "ismihan"; // degiskeni tanimladik fakat deger atamasini ayrica yaptik  
             #endregion
-            #region stackheap
-            //stack ve heap 
+            #region var Tipi
+            var a = "pasa";
+            var b = 123; // dinamik bir tip oldugu icin atama yaptigimiz degerin tipini aliyor 
             #endregion
+            #region object Tipi
+            object C = " ";
+            object D = 123; // object tipine degisken tanimi yapildiginda ve bir deger atandiginda kutuya atilmis dusuncesi vardir .  Buna boxing denir . artik bu degerin tipi objecttir
+            int unboxingD = (int)D; // boxing olan bir degiskeni unboxing yaptik yani kutudan cikarip tipini belirledik .
+            #endregion
+            #region Tip Donusumleri
+            string x = "123";
+            int y = x; // bu hatali bir cevirmedir , string olan bir tipi int e bu sekilde ceviremeyiz
 
+            int z = Convert.ToInt32(x); // string olan x degiskenini convert yardimiyla integer a cevirdik 
+            #endregion
 
         }
     }
