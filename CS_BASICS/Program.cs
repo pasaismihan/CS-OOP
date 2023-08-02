@@ -28,7 +28,7 @@ namespace CsTemelleri
             string x = "123";
             int y = x; // bu hatali bir cevirmedir , string olan bir tipi int e bu sekilde ceviremeyiz.
 
-            int z = Convert.ToInt32(x); // string olan x degiskenini convert yardimiyla integer a cevirdik
+            int z = Convert.ToInt32(x); // string olan x degiskenini convert yardimiyla integer a cevirdik.
 
             char ab = 'c';
             int abc = Convert.ToInt32(ab); // bir chari integera cevirebiliriz buna char - int casting denir . O harfe karsilik gelen sayi kodunu verir
