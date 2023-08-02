@@ -26,7 +26,7 @@ namespace CsTemelleri
             #endregion
             #region Tip Donusumleri
             string x = "123";
-            int y = x; // bu hatali bir cevirmedir , string olan bir tipi int e bu sekilde ceviremeyiz
+            int y = x; // bu hatali bir cevirmedir , string olan bir tipi int e bu sekilde ceviremeyiz.
 
             int z = Convert.ToInt32(x); // string olan x degiskenini convert yardimiyla integer a cevirdik
 
