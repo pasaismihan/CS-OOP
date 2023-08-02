@@ -32,7 +32,7 @@ namespace CsTemelleri
 
             char ab = 'c';
             int abc = Convert.ToInt32(ab); // bir chari integera cevirebiliriz buna char - int casting denir . O harfe karsilik gelen sayi kodunu verir
-
+            //ssds
             Console.WriteLine((int)'f'); // bu sekilde de cast yapabiliriz bize direkt olarak f harfine karsilik gelen sayi kodunu verir 
             #endregion
 
