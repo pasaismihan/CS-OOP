@@ -35,7 +35,18 @@ namespace CsTemelleri
             //ssds
             Console.WriteLine((int)'f'); // bu sekilde de cast yapabiliriz bize direkt olarak f harfine karsilik gelen sayi kodunu verir 
             #endregion
-
+            #region SwitchCase
+            int p = 10;
+            switch (p)
+            {
+                case 5:
+                    //......
+                    break;
+                case 10:
+                    Console.WriteLine("degerimiz 10dur");
+                    break;
+            }
+            #endregion
         }
     }
 }
