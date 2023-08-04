@@ -1,0 +1,5 @@
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.csproj.AssemblyReference.cache
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.AssemblyInfoInputs.cache
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.AssemblyInfo.cs
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.csproj.CoreCompileInputs.cache
