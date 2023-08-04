@@ -47,6 +47,40 @@ namespace CsTemelleri
                     break;
             }
             #endregion
+            #region break continue return
+            //break => break komutu switch case ve dongulerde kullanilir sadece icinde bulundugu donguden cikar ornegin ic ice 2 dongumuz var icerideki dongude break kullanirsak disaridakini etkilemez
+            //for (int i = 0; i < max; i++)
+            //{
+            //    for (int i = 0; i < max; i++)
+            //    {
+            //        break;
+            //    }
+            //}
+
+            //continue => kendinden sonraki satirlari etkisiz hale getirir onlarin okunmasini engeller , dongu icerisinde kullanilirsa continue olan kisim atlanir sonrakinden devam eder
+
+            //return => icerisinde bulundugu metotdan cikarir (break sadece donguden cikariyordu) ornegin Main metodu icerisinde kullanirsak direkt main metodundan cikarir 
+
+            #endregion
+            #region Array 
+            // diziler olusturulurken eleman sayisini vermek zorundayiz
+            // ornek dizi int[] Yaslar = new int[25]  
+            // string[] isimler = new string[25]
+            //DEGER ATAMA:
+            //Yaslar[3] = 18;
+            //DEGER OKUMA:
+            //Console.Writeline(Yaslar[3])
+            //deger atamadigimiz bir indexi okumak istedigimizde 0 cevabini aliriz
+            /*dizinin elemanlarini donguye sokmak icin ; 
+             for(int i=0;i<Yaslar.length;i++)
+            {Yaslar[i] = i*2
+            Console.WriteLine(Yaslar[i])}*/
+            // dizileri gostermenin farkli yollari vardir , ustte dizinin eleman sayisini direkt olarak belli ediyorduk fakat asagidaki ornekte elemanlari tanimlarken gosteriyoruz ve eleman sayisini yazmiyoruz
+            // int[] Yas2 = new int[] {3,5,6,1,2,3,56,3,2} bu sekilde suslu parantez ile direkt olarak dizinin elemanlarini onden tanitabiliriz
+            // int[] Yas3 = {3,5,2,4,6,8}
+            // int[] Yas4 = new int[3] {5,6,7} bu ornekler gibi de kullanabiliriz 
+            #endregion
+
         }
     }
 }
