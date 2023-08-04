@@ -78,7 +78,7 @@ namespace CsTemelleri
             // dizileri gostermenin farkli yollari vardir , ustte dizinin eleman sayisini direkt olarak belli ediyorduk fakat asagidaki ornekte elemanlari tanimlarken gosteriyoruz ve eleman sayisini yazmiyoruz
             // int[] Yas2 = new int[] {3,5,6,1,2,3,56,3,2} bu sekilde suslu parantez ile direkt olarak dizinin elemanlarini onden tanitabiliriz
             // int[] Yas3 = {3,5,2,4,6,8}
-            // int[] Yas4 = new int[3] {5,6,7} bu ornekler gibi de kullanabiliriz 
+            // int[] Yas4 = new int[3] {5,6,7} bu ornekler gibi de kullanabiliriz .
             #endregion
 
         }
