@@ -62,7 +62,7 @@ namespace CsTemelleri
             //return => icerisinde bulundugu metotdan cikarir (break sadece donguden cikariyordu) ornegin Main metodu icerisinde kullanirsak direkt main metodundan cikarir 
 
             #endregion
-            #region Array 
+            #region Diziler 
             // diziler olusturulurken eleman sayisini vermek zorundayiz
             // ornek dizi int[] Yaslar = new int[25]  
             // string[] isimler = new string[25]
@@ -71,17 +71,44 @@ namespace CsTemelleri
             //DEGER OKUMA:
             //Console.Writeline(Yaslar[3])
             //deger atamadigimiz bir indexi okumak istedigimizde 0 cevabini aliriz
-            /*dizinin elemanlarini donguye sokmak icin ; 
-             for(int i=0;i<Yaslar.length;i++)
-            {Yaslar[i] = i*2
-            Console.WriteLine(Yaslar[i])}*/
+            //dizinin elemanlarini donguye sokmak icin ; 
+            // for(int i=0;i<Yaslar.length;i++)
+            // {Yaslar[i] = i*2
+            // Console.WriteLine(Yaslar[i])}*/
             // dizileri gostermenin farkli yollari vardir , ustte dizinin eleman sayisini direkt olarak belli ediyorduk fakat asagidaki ornekte elemanlari tanimlarken gosteriyoruz ve eleman sayisini yazmiyoruz
             // int[] Yas2 = new int[] {3,5,6,1,2,3,56,3,2} bu sekilde suslu parantez ile direkt olarak dizinin elemanlarini onden tanitabiliriz
             // int[] Yas3 = {3,5,2,4,6,8}
             // int[] Yas4 = new int[3] {5,6,7} bu ornekler gibi de kullanabiliriz .
             //degisiklikler yapildi
             #endregion
+            #region Array
+            //Array.Clear metodu -> dizinin elemanlarinin degerlerini varsayilan yapar . Array.Clear(Sayilar,0,Sayilar.length) yaparsak Sayilar dizisinin her elemanini varsayilan olarak 0 yapar
+            //Array.Copy metodu -> dizinin elemanlarini baska bir diziye kopyalar . Array.Copy(Sayilar, Sayilar2 , 3) yaparsak Sayilarin elemanlarindan ilk 3 unu Sayilar2 ye kopyalar
+            //Array.IndexOf metodu -> elemanin indexini verir . Array.IndexOf(Sayilar,12) 12 sayisinin dizideki index numarasini bize dondurur . yoksa -1 doner
+            //Array.Reverse metodu -> Array.Reverse(Sayilar)
+            //Array.Sort metodu -> Array.Sort(Sayilar)
+            #endregion
+            #region foreach
+            //foreach (int item in Sayilar)
+            //{
+            //    Console.WriteLine(item);
+            //    Console.Read();
+            //}   Bu sekilde donguye sokup dizideki elemanlari yazdirabiliriz , kulanisli bir metotdur 
+            #endregion
+            #region trycatch
+            //errorlar 3 cesittir ;
+            //compile error -> syntax hatalarinda ortaya cikar , projeyi ayaga kaldirinca hatayi goruruz
+            //logical(mantiksal) error -> en ugrastirici hatadir program sorunsuz calisir fakat istenilen sonuclardan farklidir bu yuzden kodlari tek tek incelememiz gerekir
+            //run time error -> program calisir ama program calisirken olusan hatalari listeler ornegin bir int girdigimizde sorunsuz calisir fakat bir string girince hata aliriz bu hata turunde TRY CATCH kullanabiliriz
+            //try
+            //{
 
+            //}
+            //catch (Exception ex)
+            //{
+            //bu alandaki ex in getirdigi bazi ozellikler vardir ornegin Console.WriteLine(ex.message) dedigimizde bize sistemin belli hatalarda verdigi oto mesaji verir boylelikle ne hatasi yaptigimizi goruruz
+            //}
+            #endregion
         }
     }
 }
