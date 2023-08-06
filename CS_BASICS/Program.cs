@@ -3,7 +3,7 @@ namespace CsTemelleri
 {
     class CsTemelleriIlkDers
     {
-        public void Main (string[] arg) 
+        public static void Main(string[] arg)
         {
             #region DegiskenTanimlama
             string Ad; //degisken tanimladik
@@ -11,41 +11,41 @@ namespace CsTemelleri
                        // 'p' tek tirnak ile tanimliysa char dir 
             #endregion
             #region DegiskenDegerAtama
-            string Ad1 = "pasa"; //degiskeni tanimladik ve deger atadik ayni satirda
-            string Ad2;
-            Ad2 = "ismihan"; // degiskeni tanimladik fakat deger atamasini ayrica yaptik  
+            //string Ad1 = "pasa"; //degiskeni tanimladik ve deger atadik ayni satirda
+            //string Ad2;
+            //Ad2 = "ismihan"; // degiskeni tanimladik fakat deger atamasini ayrica yaptik  
             #endregion
             #region var Tipi
-            var a = "pasa";
-            var b = 123; // dinamik bir tip oldugu icin atama yaptigimiz degerin tipini aliyor 
+            //var a = "pasa";
+            //var b = 123; // dinamik bir tip oldugu icin atama yaptigimiz degerin tipini aliyor 
             #endregion
             #region object Tipi
-            object C = " ";
-            object D = 123; // object tipine degisken tanimi yapildiginda ve bir deger atandiginda kutuya atilmis dusuncesi vardir .  Buna boxing denir . artik bu degerin tipi objecttir
-            int unboxingD = (int)D; // boxing olan bir degiskeni unboxing yaptik yani kutudan cikarip tipini belirledik .
+            //object C = " ";
+            //object D = 123; // object tipine degisken tanimi yapildiginda ve bir deger atandiginda kutuya atilmis dusuncesi vardir .  Buna boxing denir . artik bu degerin tipi objecttir
+            //int unboxingD = (int)D; // boxing olan bir degiskeni unboxing yaptik yani kutudan cikarip tipini belirledik .
             #endregion
             #region Tip Donusumleri
-            string x = "123";
-            int y = x; // bu hatali bir cevirmedir , string olan bir tipi int e bu sekilde ceviremeyiz.
+            //string x = "123";
+            //int y = x; // bu hatali bir cevirmedir , string olan bir tipi int e bu sekilde ceviremeyiz.
 
-            int z = Convert.ToInt32(x); // string olan x degiskenini convert yardimiyla integer a cevirdik.
+            //int z = Convert.ToInt32(x); // string olan x degiskenini convert yardimiyla integer a cevirdik.
 
-            char ab = 'c';
-            int abc = Convert.ToInt32(ab); // bir chari integera cevirebiliriz buna char - int casting denir . O harfe karsilik gelen sayi kodunu verir
+            //char ab = 'c';
+            //int abc = Convert.ToInt32(ab); // bir chari integera cevirebiliriz buna char - int casting denir . O harfe karsilik gelen sayi kodunu verir
             //ssds
-            Console.WriteLine((int)'f'); // bu sekilde de cast yapabiliriz bize direkt olarak f harfine karsilik gelen sayi kodunu verir 
+            //Console.WriteLine((int)'f'); // bu sekilde de cast yapabiliriz bize direkt olarak f harfine karsilik gelen sayi kodunu verir 
             #endregion
             #region SwitchCase
-            int p = 10;
-            switch (p)
-            {
-                case 5:
-                    //......
-                    break;
-                case 10:
-                    Console.WriteLine("degerimiz 10dur");
-                    break;
-            }
+            //int p = 10;
+            //switch (p)
+            //{
+            //    case 5:
+            //        //......
+            //        break;
+            //    case 10:
+            //        Console.WriteLine("degerimiz 10dur");
+            //        break;
+            //}
             #endregion
             #region break continue return
             //break => break komutu switch case ve dongulerde kullanilir sadece icinde bulundugu donguden cikar ornegin ic ice 2 dongumuz var icerideki dongude break kullanirsak disaridakini etkilemez
@@ -102,13 +102,17 @@ namespace CsTemelleri
             //run time error -> program calisir ama program calisirken olusan hatalari listeler ornegin bir int girdigimizde sorunsuz calisir fakat bir string girince hata aliriz bu hata turunde TRY CATCH kullanabiliriz
             //try
             //{
-
+            Console.WriteLine("lutfen bir sayi giriniz");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(sayi + " girdiginiz deger bir sayidir");
+            Console.Read();
             //}
             //catch (Exception ex)
             //{
             //bu alandaki ex in getirdigi bazi ozellikler vardir ornegin Console.WriteLine(ex.message) dedigimizde bize sistemin belli hatalarda verdigi oto mesaji verir boylelikle ne hatasi yaptigimizi goruruz
             //}
             #endregion
+
         }
     }
 }

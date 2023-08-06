@@ -3,3 +3,13 @@
 /Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.AssemblyInfoInputs.cache
 /Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.AssemblyInfo.cs
 /Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.csproj.CoreCompileInputs.cache
+/Users/pasa/CS_BASICS/CS_BASICS/bin/Debug/net7.0/CS_BASICS
+/Users/pasa/CS_BASICS/CS_BASICS/bin/Debug/net7.0/CS_BASICS.deps.json
+/Users/pasa/CS_BASICS/CS_BASICS/bin/Debug/net7.0/CS_BASICS.runtimeconfig.json
+/Users/pasa/CS_BASICS/CS_BASICS/bin/Debug/net7.0/CS_BASICS.dll
+/Users/pasa/CS_BASICS/CS_BASICS/bin/Debug/net7.0/CS_BASICS.pdb
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.dll
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/refint/CS_BASICS.dll
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.pdb
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/CS_BASICS.genruntimeconfig.cache
+/Users/pasa/CS_BASICS/CS_BASICS/obj/Debug/net7.0/ref/CS_BASICS.dll
