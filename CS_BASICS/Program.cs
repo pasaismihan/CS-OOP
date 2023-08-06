@@ -112,6 +112,47 @@ namespace CsTemelleri
             //bu alandaki ex in getirdigi bazi ozellikler vardir ornegin Console.WriteLine(ex.message) dedigimizde bize sistemin belli hatalarda verdigi oto mesaji verir boylelikle ne hatasi yaptigimizi goruruz
             //}
             #endregion
+            #region Classlar 
+            //classlar icerisinde metotlari tanimlariz , ornegin Main bir metottur
+
+            #endregion
+            #region Metodlar
+            //islem parcaciklari olarak dusunulebilir , yapacagimiz her islemi ayri ayri parcalara boldugumuzde bunlari ayri metodlar olarak yazabiliriz . Yontem olarak da gecer
+            //Metodlari olustururken 4 adet tip vardir bunlara dikkat ederek olusturacagiz . Girdisi veya ciktisi var mi yok mu buna bakacagiz
+            //Parametre aliyor mu almiyor mu , geriye deger gonderiyor mu gondermiyor mu buna bakacagiz bu durumda 4 farkli varyasyon ortaya cikiyor
+            //ornek bir metod  ;
+            //[erisim belirleyici(public mi private mi vs.)] [geri donus tipi(int,string)] [adi] {
+            // islemler ...    }
+            //! eger bir metod geriye deger gondermiyorsa void ile belirtiriz
+            // public void Metod1 (bool x) {Console.WriteLine(x + "false" } console ile yazildiginda geriye deger gondermesi anlamina gelmez . bu ornek deger gondermeyen paramete alan metod ornegidir
+            // private int Metod2 () {return 3;} geriye deger gonderen(int olarak gonderecegini belirttik)  parametre almayan metod tipi 
+
+            #endregion
+            #region MetodlarinKullanimi
+            //     class program
+            //{
+            //    public static void Main(string[] arg)
+            //    {
+            //        int toplamSonuc = Topla(15, 23);
+            //    }
+            //    static public int Topla(int sayi1 , int sayi2)
+            //    {
+            //        double bolmeIslemi = Bolme(12, 4);
+            //        return sayi1 + sayi2;
+            //    }
+            //    static public double Bolme(double sayi1,double sayi2)
+            //    {
+            //        return sayi1 / sayi2;
+            //    }
+            //} yukaridaki ornekte cikaracagimiz sonuc , biz ayni class icerisinde farkli metotlar kullanabiliriz ve bunlari birbiri icerisinde de kullabiliriz . fakat nihayetinde calistirmak icin main metodunu kullaniriz
+            #endregion
+            #region new keyword
+            //objectler yani nesneler classlardan olusur , yani class(sinif) lar nesne uretmemizi saglayan yapilardir.
+            // int string gibi turler de birer class tir
+            // Ornek abc = new Ornek(); dedigimizde Ornek class dir , abc ise instance ve ayni zamanda referanstir , referans oldugu da nesnemiz yani Ornek() . bu dusuncede abc stack de tutulurken Ornek() onun heap inde tutulur
+            // new Ornek() demek Ornek sinifindan bir nesne talep ettigimiz anlamina gelir
+
+            #endregion
 
         }
     }
