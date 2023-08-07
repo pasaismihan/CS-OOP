@@ -157,9 +157,21 @@ namespace CsTemelleri
             //ayni sinif icerisinde ayni isimde birden fazla metod yapabiliriz fakat parametre sayilari ayni olmamalidir veya parametre tipleri ayni olmamalidir veya parametre yerleri ayni olmamalidir  
             #endregion
             #region Field Property
-            //Field degisken demetir class icerisinde olustururuz int x ; bir field ornegidir .
+            //Field degisken demetir class icerisinde olustururuz private int x ; bir field ornegidir .
             //main metodunda classa ulasmak icin bir object olusturuyoruz uzerinden Ornek o = new Ornek(); ile olusturduk . Ornek class i icerisinde bizim fieldimiz oldugu icin onu o.x seklinde cagirabiliriz
-            //fakat bunu istemeyiz cunku kodlarimiza disaridan erisim olur , bunu engellemek icin de Property vardir get ve set  
+            //fakat bunu istemeyiz cunku kodlarimiza disaridan erisim olur , bunu engellemek icin de Property vardir get ve set  komutlari ile erisime acabiliriz
+            // property ornegi ; public int X { get {} set{} } ilk basa erisim bigisi gelir sonrasinda ilgili fieldin turu(int) giirilir ve parantez acmadan suslu parantezler ile get set yazariz (parantez acsaydik metod olurdu)
+            // public int X {get {return x; } set { x = value; } }
+            // ornegin Main metodunda x fieldi ile islem yapmak istedigimizde o.x = "pasa" yazarsak set komutu calisir "pasa" yi value ye esitler , Console.WriteLine(o.x); dedigimizde ise get calisir ve fieldi cagirmis oluruz 
+            #endregion
+            #region Constructor
+            //constructor . siniftan nesne olusturdugumuzda ( new Ornek();) o nesneyi yapilandirmamiza yariyor 
+            //constructor metod public olmalidi
+            //constructor metodun geri donus degeri olmaz
+            //constructor metodun ismi class ismi ile ayni olmalidir
+            // public Ornek () {} construnctor metod ornegidir
+            // mesela int x; bir fieldimiz olsun ve public int X {get; set; }  ve biz constructor olarak public Ornek() { x = 15 } yazarsak buradaki amac main metodunda Ornek class i ile Ornek nesnesi ( new Ornek())
+            // cagirildiginda otomatik olarak x 15 degerini alir cunku constructor ile yapilandirmis oluruz , nesne olusturulduktan sonra ilk calisacak metod constructor dir 
             #endregion
 
         }
