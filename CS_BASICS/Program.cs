@@ -153,6 +153,14 @@ namespace CsTemelleri
             // new Ornek() demek Ornek sinifindan bir nesne talep ettigimiz anlamina gelir
 
             #endregion
+            #region Overload
+            //ayni sinif icerisinde ayni isimde birden fazla metod yapabiliriz fakat parametre sayilari ayni olmamalidir veya parametre tipleri ayni olmamalidir veya parametre yerleri ayni olmamalidir  
+            #endregion
+            #region Field Property
+            //Field degisken demetir class icerisinde olustururuz int x ; bir field ornegidir .
+            //main metodunda classa ulasmak icin bir object olusturuyoruz uzerinden Ornek o = new Ornek(); ile olusturduk . Ornek class i icerisinde bizim fieldimiz oldugu icin onu o.x seklinde cagirabiliriz
+            //fakat bunu istemeyiz cunku kodlarimiza disaridan erisim olur , bunu engellemek icin de Property vardir get ve set  
+            #endregion
 
         }
     }
