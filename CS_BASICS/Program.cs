@@ -173,7 +173,35 @@ namespace CsTemelleri
             // mesela int x; bir fieldimiz olsun ve public int X {get; set; }  ve biz constructor olarak public Ornek() { x = 15 } yazarsak buradaki amac main metodunda Ornek class i ile Ornek nesnesi ( new Ornek())
             // cagirildiginda otomatik olarak x 15 degerini alir cunku constructor ile yapilandirmis oluruz , nesne olusturulduktan sonra ilk calisacak metod constructor dir 
             #endregion
+            #region Destructor 
+            //uretilmis bir nesnenin bellekten silinme asamasinda son yapilacak islemi belirten metoddur , constructor ilk calisiyordu bu son calisiyor
+            // ~Ornek () {Console.WriteLine("nesne siliniyor")} seklinde yazilir
+            // Garbage Collector un kod yazim sekli GC.Collect(); seklindedir bu koddan sonraki referanssiz nesnelerin tamamini silecektir 
+            #endregion
+            #region this
+            // this keywordu , ilgili sinifta turetilmis nesneleri sinif icerisinde temsil etmemizi saglayan bir keyworddur 
+            #endregion
+            #region ArrayList Collection
+            //DIZILERIN OLUMSUZ YANLARI
+            // Eleman sayisini onceden belirtmemiz gerekiyor
+            // Elemanlari atmasak dahi bellekte yerleri ayriliyor
+            // Performans acisindan zayif
+            // Eleman atarken veya okurken kod maliyeti olusuyor
 
+            // ArrayList Collections 
+            // ArrayList de bir class dir .
+            // ArrayList liste = new ArrayList(); seklinde yeni object tanimliyoruz fakat bunun icerigi bir ArrayList collection dur .
+            // ArrayList de islem yapmak dizilerdeki gibi koseli parantezle degil komutlarla yapilir yani liste.Add() eleman eklemek icin kullandigimiz,  komutlardan bir tanesidir
+            // ornek olarak ArrayListe eleman atmak istersek liste.Add("pasa")  liste.Add("ismihan") yazim sirasina gore listenin 0. indexi 1. indexi seklinde eleman atamis olduk . bunlari cagirmak icin de
+            // yine indexer(yani [ ] ) kullanacagiz liste[1] ; cagirdigimizda bize "ismihan" sonucunu verecektir
+            // ArrayList lerde biz eleman ekledigimizde bu eleman object turunde gelmektedir , fakat bu olumsuz bir seydir cunku boxing durumu olusur ve performans acisindan iyi degildir .
+            // biz hangi tipi girdiysek ornegin string , listede de bunu string turunde gormek isteriz , bu olumsuz ozellikten dolayi ArrayList de pek kullanilmamaktadir 
+
+
+            #endregion
+            #region Generic List Collection
+
+            #endregion
         }
     }
 }
