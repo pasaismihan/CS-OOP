@@ -114,7 +114,7 @@ namespace CsTemelleri
             #endregion
             #region Classlar 
             //classlar icerisinde metotlari tanimlariz , ornegin Main bir metottur
-
+            // objectten turemistir en ustte object vardir 
             #endregion
             #region Metodlar
             //islem parcaciklari olarak dusunulebilir , yapacagimiz her islemi ayri ayri parcalara boldugumuzde bunlari ayri metodlar olarak yazabiliriz . Yontem olarak da gecer
@@ -200,6 +200,55 @@ namespace CsTemelleri
 
             #endregion
             #region Generic List Collection
+            // List<int> liste = new List<int>(); seklinde olusur , List ozellestirilmis(generic) bir classtir fakat ayni zamanda collection ozelligine sahiptir
+            // liste.Add("pasa") dedigimizde icerigini string turunde alir ArrayList gibi object turunde almaz 
+            #endregion
+            #region Inheritance
+            // eger bir base class ve onun altinda kalitim aldigi baska bir class varsa ve base class da parametreli bir constructor tanimladiysak , alt class ile ilgili bir object olusturdugumuzda hata aliriz
+            /*  
+           class A
+         {
+             public A(string x)
+             {
+
+             }
+         }
+           class B : A
+         {
+             public B() : base("pasa")
+             {
+
+             }
+         }
+
+         B b = new B(); bu sekilde object olustururken parametre isteyecegi icin A da parametreli constructor olusturdugumuzda B de : base ile o formatta ne gelecegini belirtmemiz gerekir 
+        */
+            #endregion
+            #region Virtual Override
+            // base class da olusturulmus bir metodu  alt class da degistirmek istersek eger kullandigimiz ikili keyworddur
+            /*    class A
+            {
+                public virtual void OrnekMetod()
+                {
+                    Console.WriteLine("base class da olusturulmus metod");
+                }
+            }
+            class B : A
+            {
+                public override void OrnekMetod()
+                {
+                    Console.WriteLine("bu alt class da ezilmis metoddur");
+                }
+            }
+            */
+            #endregion
+            #region Polymorphism
+            // ornegin A isminde bir classimiz var ve B classi A dan kalitim aliyor ise A a = new B(); seklinde A classindan B tipinde object turetebiliriz buna polymorfizm denir
+            // buna cokbicimlilik demesinin sebebi B classinin A dan kalitim aldigi icin A icerisinde olusturulan objelere ulasabilir , yani A gibi davranabilir bu yuzden denilmistir
+            // 2 farkli ornegimiz olsun A a = new B(); ve B b = new B();
+            // a. ile komutlari cagirdigimizda A turunden oldugu icin sadece A class icerisindeki metodu property veya metoda ulasmis oluruz fakat B objesi uzerinden islem yapmis oluruz
+            // b. dedigimizde yine B nesnesi uzerinden islem yapmis oluruz fakat digerinden farki hem A hem B classlari icerisindeki property ve metodlara ulasimimiz var
+            // casting islemi yaparak a referansinin tipini degistirebiliriz . object konusunda ele aldigimiz cast islemi ile B b = (B)a; yapabiliriz boylelikle B class inin ozelliklerini alabilir 
 
             #endregion
         }
