@@ -274,8 +274,40 @@ namespace CsTemelleri
             */
             #endregion
             #region Interface
-
-            #endregion
+            //  interfacenin amaci kendisinden kalitim alacak siniflara bir imza vermesidir , class degildir
+            // interface IListe {} seklinde yazilirlar . I ile baslamasinin sebebi genelde oyle kullanilmasidir
+            // interface dedigimizde aklimiza kalitim ( inheritence) gelecek
+            // bir sinif birden fazla interface den kalitim alabilir ornegin class Ornek : IOrnek1 , IOrnek2 {} seklinde yapilabilir
+            // interface de sadece imza ozelligi vardir o yuzden interface de herhangi bir yapinin govdesi(scope) tanimlanamaz, abstract classlara gore daha sinirlidir
+            // interface icerisinde static yapi olamaz
+            // interface icerisinde erisim belirleyici (access modifier => public,private...) olmaz .
+            // interface i kalitim olarak aldigimizda hata doner demistik bu yuzden sag click yapariz ve orada 2 secenek vardir implement interface ve implement interface explicit secenekleri ,
+            // eger ki 2 farki interfaceden kalitim aldiyak ve her ikisinde de ortak bir eleman varsa bu eleman implement interface dedigimizde 1 tane gelir fakat hangi interfaceden geldigini bilemeyiz
+            // bundan dolayi 2. secenegi kullaniriz fakat onda da object olusturdugumuzda interface nin elemanlarina ulasamayiz. ulasmanin yolu da polymorphism den yararlanmaktir yani IOrnek ornek = new OrnekClass(); yaptigimizda ornek. ile elemanlara ulasabiliriz
+            // eger bir sinif hem baska siniftan hem de interfacelerden kalitim alacak ise once kalitim alacagi diger sinif yazilir sonrasinda virgul ile geri kalan interface ler yazilir 
+            /*
+            interface IOrnek
+        {
+            int S();
+            void T();
+            int OrnekProperty { get; set; }
         }
+        class OrnekClass : IOrnek
+        {
+            public int OrnekProperty { get; set; }
+
+            public int S()
+            {
+                return 3;
+            }
+
+            public void T()
+            {
+   
+            }
+        } interfaceden kalitim alindigi icin icerisinde bulunan imzalari tekrar cagirmamiz gerekti fakat bunu erisim belirleyicileri kullanarak yaptik 
+            */
+        #endregion
+    }
     }
 }
