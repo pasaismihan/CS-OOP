@@ -248,7 +248,32 @@ namespace CsTemelleri
             // 2 farkli ornegimiz olsun A a = new B(); ve B b = new B();
             // a. ile komutlari cagirdigimizda A turunden oldugu icin sadece A class icerisindeki metodu property veya metoda ulasmis oluruz fakat B objesi uzerinden islem yapmis oluruz
             // b. dedigimizde yine B nesnesi uzerinden islem yapmis oluruz fakat digerinden farki hem A hem B classlari icerisindeki property ve metodlara ulasimimiz var
-            // casting islemi yaparak a referansinin tipini degistirebiliriz . object konusunda ele aldigimiz cast islemi ile B b = (B)a; yapabiliriz boylelikle B class inin ozelliklerini alabilir 
+            // casting islemi yaparak a referansinin tipini degistirebiliriz . object konusunda ele aldigimiz cast islemi ile B b = (B)a; yapabiliriz boylelikle B class inin ozelliklerini alabilir  
+
+            #endregion
+            #region AbstractClass
+            //Virtual ve Override mantigiyla birebir aynidir , base class daki metodu child class da ezmeye yarar . Virtual dan tek farki zorunlu olmasidir , abstract yaptigimiz class base classi ezmek zorundadir
+            //soyut sinif anlamina gelir
+            //Abstract class icerisinde abstract eleman olabilir veya olmayabilir . Eger bir eleman abstract olacaksa private olamaz 
+            //Abstract classlardan nesne olusturulmaz
+            //Abstract elemanlarin ssadece imzasi olur suslu parantezleri olmaz ornegin public abstract void Liste();
+            /* 
+             abstract class Z
+           {
+                 public abstract int ornek { get; set; }
+                 abstract public void ornek2();
+           }
+           class Y : Z
+           {
+               public override int ornek { get; set; }
+
+               public override void ornek2();
+               {
+               }
+           } yukaridaki ornekteki gibi abstract bir eleman yaptigimizda ve bu abstract class Z yi kalitim aldigimizda hata veriyor sebebi de ayni metodlarin override edilmesi gerektigi icin . 
+            */
+            #endregion
+            #region Interface
 
             #endregion
         }
