@@ -307,7 +307,27 @@ namespace CsTemelleri
             }
         } interfaceden kalitim alindigi icin icerisinde bulunan imzalari tekrar cagirmamiz gerekti fakat bunu erisim belirleyicileri kullanarak yaptik 
             */
-        #endregion
-    }
+            #endregion
+            #region Generic Class
+            // genel bir siniftir kullanimi iyidir
+            /*
+            class MyClass<T, A>
+        {
+            T t;
+            A a;
+            public void x()
+            {
+                //...
+            }
+        }
+        class Ornek
+        {
+
+        } eger biz Main class da object olusturmak istersek Myclass daki T ve A generic class lari yerine baska classlar yerlestirebiliriz yani MyClass<Ornek , SqlConnection> m1 = new MyClass<Ornek , SqlConnection>();
+            */
+         // class MyClass<T> where T : A yazdigimizda where den sonra gelen kisim T tipi class A ve A dan kalitim alan classlarla yerini degistirebilir generic olarak
+         // new constraint -> yine T tipi generic class dusunelim bu tipten object olusturabilmek icin class MyClass<T> where T : new() dedigimizde artik T t = new T(); isleminden hata almayiz ve object uretiriz 
+            #endregion
+        }
     }
 }
